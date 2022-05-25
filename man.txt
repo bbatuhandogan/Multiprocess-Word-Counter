@@ -1,0 +1,27 @@
+.TH KS 1 "2022-04-24" "V1.0" "ks man page"
+
+.SH ISIM
+ks - Prints the number of lines, words, characters with multiprocessing for one or more files
+ks - 
+
+.SH ACIKLAMA
+For each given file, it creates a separate process with the fork() command and prints the number of lines, words and characters in the file. And if more than one file is given, it prints the total amount with shared memories.
+Words are strings of characters separated by a non-zero space \t \n.
+
+If the File extension is not given or the '+' character is given, the file in stdin will be processed.
+
+If no print parameter is given, it is printed in the following order: line, word, character.
+
+.SH AYARLAR
+.IP -l
+Printing line count 
+
+.IP -w
+Printing word count
+                       
+.IP -c
+Printing chracter count
+
+.SH YAZAR
+Writing by Batuhan Dogan
+
